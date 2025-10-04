@@ -40,6 +40,8 @@ Item {
         }
     }
 
+    onSpokeCountChanged: wheelCanvas.requestPaint();
+
     Component.onCompleted: wheelFace.rotation = manualAngle % 360;
 
     Rectangle {
@@ -115,8 +117,7 @@ Item {
             onRimColorChanged: requestPaint();
             onDiscColorChanged: requestPaint();
             onSpokeColorChanged: requestPaint();
-            onHubColorChanged: requestPaint();
-            onSpokeCountChanged: requestPaint();
+            onHubColorChanged: requestPaint();            
         }
     }
 }
