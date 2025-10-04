@@ -364,3 +364,4 @@ FodyWeavers.xsd
 *.in
 *.out
 /QtProjects/WheelSpeed/build
+/QtProjects/WheelSpeed2/build
