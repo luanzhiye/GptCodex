@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 *.in
 *.out
+/QtProjects/WheelSpeed/build
