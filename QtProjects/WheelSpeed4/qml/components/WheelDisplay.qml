@@ -112,12 +112,14 @@ Item {
                 ctx.fill();
             }
 
-            onWidthChanged: requestPaint();
-            onHeightChanged: requestPaint();
-            onRimColorChanged: requestPaint();
-            onDiscColorChanged: requestPaint();
-            onSpokeColorChanged: requestPaint();
-            onHubColorChanged: requestPaint();            
+
+            Connections {
+                target: wheelRoot
+                onRimColorChanged: wheelCanvas.requestPaint();
+                onDiscColorChanged: wheelCanvas.requestPaint();
+                onSpokeColorChanged: wheelCanvas.requestPaint();
+                onHubColorChanged: wheelCanvas.requestPaint();
+            }
         }
     }
 }
